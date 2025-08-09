@@ -1,0 +1,57 @@
+﻿body {
+    background-color: rgb(26, 26, 29);
+    color: white;
+    font-family: Tahoma
+}
+
+#back {
+    background-color: black;
+    color: rgb(19, 66, 142);
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+#mainButton {
+    background-color: greenyellow;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px
+}
+
+h1 {
+    text-align: center
+}
+
+.score {
+    position: absolute;
+    height: 100px;
+    bottom: 25px
+}
+
+h4 {
+    user-select: none;
+    font-size: 55px;
+    display: inline-block;
+    margin: 0
+}
+
+#total {
+    position: relative;
+    left: 5px;
+}
+
+@media (min-width: 1200px) {
+    #back {
+        font-size: 40px
+    }
+}
+
+@media (max-width: 1199px) {
+    #back {
+        font-size: 60px
+    }
+}
