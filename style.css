@@ -12,18 +12,24 @@
     top: 0
 }
 
+h1 {
+    text-align: center
+}
+
 #mainButton {
     background-color: greenyellow;
+    color: black;
+    font-size: 70px;
+    user-select: none;
     width: 450px;
     height: 450px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 100px
-}
-
-h1 {
-    text-align: center
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 .score {
@@ -42,6 +48,26 @@ h4 {
 #total {
     position: relative;
     left: 5px;
+}
+
+.rect {
+    background-color: rgb(53, 57, 64);
+    width: 350px;
+    height: 90%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: grid
+}
+
+
+h3 {
+    font-size: 35px;
+    position: absolute;
+    right: 175px;
+    top: 15px;
+    transform: translateX(+50%);
+    margin: 0
 }
 
 @media (min-width: 1200px) {
