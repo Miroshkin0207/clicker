@@ -6,8 +6,8 @@ function buttonClick() {
     let total = document.querySelector("#total").innerHTML++
 }
 
-const names = ["Серафим", "Итачи", "Обито"]
-const scores = [100, 69, 52]
+const names = []
+const scores = []
 
 for (let i = 0; i < names.length; i++) {
     let line = document.createElement("div")
@@ -24,4 +24,5 @@ for (let i = 0; i < names.length; i++) {
     line.appendChild(score)
     
     document.querySelector(".rect").appendChild(line)
+
 }
