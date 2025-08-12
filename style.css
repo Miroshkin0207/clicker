@@ -13,7 +13,10 @@
 }
 
 h1 {
-    text-align: center
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    bottom: 15px
 }
 
 #mainButton {
@@ -24,8 +27,7 @@ h1 {
     width: 450px;
     height: 450px;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 400px;
     top: 100px;
     display: flex;
     justify-content: center;
@@ -50,24 +52,75 @@ h4 {
     left: 5px;
 }
 
+h3 {
+    font-size: 35px;
+    position: absolute;
+    right: 225px;
+    top: 15px;
+    transform: translateX(+50%);
+    margin: 0
+}
+
 .rect {
     background-color: rgb(53, 57, 64);
-    width: 350px;
+    width: 450px;
     height: 90%;
     position: absolute;
     right: 0;
     bottom: 0;
-    display: grid
+    display: flex;
+    flex-direction: column
 }
 
+.mainLine {
+    background-color: rgb(19, 66, 142);
+    font-size: 30px;
+    display: flex;
+    border-bottom: solid 5px black
+}
 
-h3 {
-    font-size: 35px;
+.border {
+    background-color: black;
+    width: 5px;
+    height: 100%;
     position: absolute;
-    right: 175px;
-    top: 15px;
-    transform: translateX(+50%);
-    margin: 0
+    left: calc(60% - 3px)
+}
+
+.line {
+    display: flex;
+    font-size: 30px;
+    border-bottom: solid 5px black;
+    border-left: solid 5px black
+}
+
+.names {
+    width: 60%
+}
+
+.mainName {
+    width: 60%;
+    margin-bottom: 10px;
+    text-align: center
+}
+
+.scores {
+    width: 40%;
+    text-align: center
+}
+
+.help {
+    background-color: rgb(95, 88, 88);
+    color: rgb(3, 79, 200);
+    font-size: 30px;
+    width: 450px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 1
 }
 
 @media (min-width: 1200px) {
