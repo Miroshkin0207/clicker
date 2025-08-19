@@ -6,29 +6,21 @@
 
 #back {
     background-color: black;
-    color: rgb(19, 66, 142);
+    color: rgb(19, 65, 142);
     position: absolute;
     left: 0;
     top: 0
 }
 
 h1 {
-    text-align: center;
-    font-size: 40px;
-    position: relative;
-    bottom: 15px
+    text-align: center
 }
 
 #mainButton {
     background-color: greenyellow;
     color: black;
-    font-size: 70px;
     user-select: none;
-    width: 450px;
-    height: 450px;
-    position: absolute;
-    left: 400px;
-    top: 100px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center
@@ -123,14 +115,39 @@ h3 {
     z-index: 1
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
     #back {
         font-size: 40px
     }
+
+    h1 {
+        font-size: 40px;
+        position: relative;
+        bottom: 15px
+    }
+
+    #mainButton {
+        font-size: 70px;
+        width: 450px;
+        height: 450px;
+        left: 400px
+    }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 999px) {
     #back {
-        font-size: 60px
+        font-size: 30px
+    }
+
+    h1 {
+        font-size: 30px
+    }
+
+    #mainButton {
+        font-size: 45px;
+        width: 250px;
+        height: 250px;
+        margin-right: auto;
+        margin-left: auto
     }
 }
