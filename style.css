@@ -28,9 +28,7 @@ h1 {
 }
 
 .score {
-    position: absolute;
-    height: 100px;
-    bottom: 25px
+    height: 100px
 }
 
 h4 {
@@ -43,15 +41,6 @@ h4 {
 #total {
     position: relative;
     left: 5px;
-}
-
-h3 {
-    font-size: 35px;
-    position: absolute;
-    right: 225px;
-    top: 15px;
-    transform: translateX(+50%);
-    margin: 0
 }
 
 .rect {
@@ -132,6 +121,21 @@ h3 {
         height: 450px;
         left: 400px
     }
+
+    .score {
+        position: absolute;
+        bottom: 25px
+    }
+
+    h3 {
+        font-size: 35px;
+        position: absolute;
+        right: 225px;
+        top: 15px;
+        transform: translateX(+50%);
+        margin: 0
+    }
+
 }
 
 @media (max-width: 999px) {
@@ -141,7 +145,7 @@ h3 {
 
     h1 {
         font-size: 30px;
-        top: 10px
+        top: 15px
     }
 
     #mainButton {
@@ -152,7 +156,17 @@ h3 {
         margin-left: auto
     }
 
+    .score {
+        position: relative
+    }
+
     .rect {
         top: 1000px
+    }
+
+    h3 {
+        font-size: 30px;
+        position: relative
+
     }
 }
