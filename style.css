@@ -66,7 +66,7 @@ h4 {
     width: 5px;
     height: 100%;
     position: absolute;
-    left: calc(60% - 3px)
+    left: 60%
 }
 
 .line {
@@ -94,14 +94,10 @@ h4 {
 .help {
     background-color: rgb(95, 88, 88);
     color: rgb(3, 79, 200);
-    font-size: 30px;
-    width: 450px;
-    height: 75px;
+    font-size: 30px;   
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    bottom: 0;
     z-index: 1
 }
 
@@ -136,6 +132,16 @@ h4 {
         margin: 0
     }
 
+    .rect {
+
+    }
+
+    .help {
+        width: 450px;
+        height: 75px;
+        position: fixed;
+        bottom: 0;
+    }
 }
 
 @media (max-width: 999px) {
@@ -154,21 +160,22 @@ h4 {
         height: 250px;
         margin-right: auto;
         margin-left: auto;
-        bottom: 20px
+        bottom: 10px
     }
 
     .score {
         position: absolute;
-        top: 400px
-    }
-
-    .rect {
-        top: 1000px
+        top: 350px
     }
 
     h3 {
-        font-size: 30px;
-        position: relative
-
+        font-size: 35px;
+        position: absolute;
+        top: 400px;
+        text-align: center
+    }
+    
+    .rect {
+        top: 450px
     }
 }
