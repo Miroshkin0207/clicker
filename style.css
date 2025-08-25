@@ -45,8 +45,6 @@ h4 {
 
 .rect {
     background-color: rgb(53, 57, 64);
-    width: 450px;
-    height: 90%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -94,11 +92,13 @@ h4 {
 .help {
     background-color: rgb(95, 88, 88);
     color: rgb(3, 79, 200);
-    font-size: 30px;   
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1
+    z-index: 1;
+    position: fixed;
+    bottom: 0
 }
 
 @media (min-width: 1000px) {
@@ -133,14 +133,13 @@ h4 {
     }
 
     .rect {
-
+        width: 450px;
+        height: 90%
     }
 
     .help {
         width: 450px;
-        height: 75px;
-        position: fixed;
-        bottom: 0;
+        height: 75px
     }
 }
 
@@ -159,8 +158,7 @@ h4 {
         width: 250px;
         height: 250px;
         margin-right: auto;
-        margin-left: auto;
-        bottom: 10px
+        margin-left: auto
     }
 
     .score {
@@ -176,6 +174,7 @@ h4 {
     }
     
     .rect {
-        top: 450px
+        width: 100%;
+        top: 500px
     }
 }
