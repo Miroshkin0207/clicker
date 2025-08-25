@@ -49,7 +49,6 @@ h4 {
     background-color: rgb(53, 57, 64);
     position: absolute;
     right: 0;
-    bottom: 0;
     display: flex;
     flex-direction: column
 }
@@ -83,12 +82,16 @@ h4 {
 .mainName {
     width: 60%;
     margin-bottom: 10px;
-    text-align: center
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 .scores {
     width: 40%;
-    text-align: center
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 .help {
@@ -98,9 +101,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
-    position: fixed;
-    bottom: 0
+    z-index: 1
 }
 
 @media (min-width: 1000px) {
@@ -135,12 +136,10 @@ h4 {
     }
 
     .rect {
-        width: 450px;
-        height: 90%
+        top: 75px
     }
 
     .help {
-        width: 450px;
         height: 75px
     }
 }
@@ -160,7 +159,8 @@ h4 {
         width: 250px;
         height: 250px;
         margin-right: auto;
-        margin-left: auto
+        margin-left: auto;
+        top: 2px
     }
 
     .score {
@@ -172,11 +172,16 @@ h4 {
         font-size: 35px;
         position: absolute;
         top: 400px;
-        text-align: center
+        left: 50%;
+        transform: translateX(-50%)
     }
     
     .rect {
         width: 100%;
         top: 500px
+    }
+
+    .help {
+        height: 65px
     }
 }
