@@ -2,16 +2,24 @@
     window.location.href = "https://miroshkin0207.github.io/miroshkin"
 }
 
-function buttonClick() {
-    let total = document.querySelector("#total").innerHTML++
+let button = document.querySelector("#mainButton")
+button.addEventListener("touchstart", touchStart)
+button.addEventListener("mousedown", touchStart)
+button.addEventListener("touchend", touchEnd)
+button.addEventListener("mouseup", touchEnd)
+
+function touchStart() {
+    button.style.backgroundColor = "rgb(90, 116, 51)"
+}
+
+function touchEnd() {
+    button.classList.remove("buttonClicked")
+    button.style.backgroundColor = "greenyellow"
+    document.querySelector("#total").innerHTML++
 }
 
 const table = [
-    { name: "Итачи", score: 1000 },
-    { name: "Обито", score: 485 },
-    { name: "Кагуя", score: 1581 },
-    { name: "Мадара", score: 1500 },
-    { name: "Хамура", score: 898 }
+
 ]
 table.sort((a, b) => b.score - a.score)
 
