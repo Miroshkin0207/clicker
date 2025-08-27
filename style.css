@@ -136,6 +136,7 @@ h4 {
     }
 
     .rect {
+        width: 450px;
         top: 75px
     }
 
@@ -169,11 +170,12 @@ h4 {
     }
 
     h3 {
-        font-size: 35px;
+        
         position: absolute;
         top: 400px;
         left: 50%;
-        transform: translateX(-50%)
+        transform: translateX(-50%);
+        font-size: 35px
     }
     
     .rect {
