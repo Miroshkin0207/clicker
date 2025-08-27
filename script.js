@@ -7,6 +7,11 @@ button.addEventListener("touchstart", touchStart)
 button.addEventListener("mousedown", touchStart)
 button.addEventListener("touchend", touchEnd)
 button.addEventListener("mouseup", touchEnd)
+button.addEventListener("onclick", scoreUp)
+
+function scoreUp() {
+    document.querySelector("#total").innerHTML++
+}
 
 function touchStart() {
     button.style.backgroundColor = "rgb(90, 116, 51)"
@@ -15,7 +20,6 @@ function touchStart() {
 function touchEnd() {
     button.classList.remove("buttonClicked")
     button.style.backgroundColor = "greenyellow"
-    document.querySelector("#total").innerHTML++
 }
 
 const table = [
@@ -41,4 +45,5 @@ for (let i = 0; i < table.length; i++) {
     
     document.querySelector(".rect").appendChild(line)
 }
+
 document.querySelector(".rect").appendChild(help)
