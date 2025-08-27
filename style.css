@@ -175,7 +175,7 @@ h4 {
         top: 400px;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 35px
+        font-size: 30px
     }
     
     .rect {
@@ -187,3 +187,4 @@ h4 {
         height: 65px
     }
 }
+
