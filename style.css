@@ -1,4 +1,4 @@
-﻿body {
+﻿﻿body {
     background-color: rgb(26, 26, 29);
     color: white;
     font-family: Tahoma
@@ -170,14 +170,13 @@ h4 {
     }
 
     h3 {
-        
         position: absolute;
         top: 400px;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 30px
+        font-size: 25px
     }
-    
+
     .rect {
         width: 100%;
         top: 500px
@@ -187,4 +186,3 @@ h4 {
         height: 65px
     }
 }
-
