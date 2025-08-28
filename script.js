@@ -7,7 +7,7 @@ button.addEventListener("touchstart", touchStart)
 button.addEventListener("mousedown", touchStart)
 button.addEventListener("touchend", touchEnd)
 button.addEventListener("mouseup", touchEnd)
-button.addEventListener("onclick", scoreUp)
+button.addEventListener("click", scoreUp)
 
 function scoreUp() {
     document.querySelector("#total").innerHTML++
@@ -42,7 +42,7 @@ for (let i = 0; i < table.length; i++) {
     score.classList.add("scores")
     score.innerHTML = table[i].score
     line.appendChild(score)
-    
+
     document.querySelector(".rect").appendChild(line)
 }
 
