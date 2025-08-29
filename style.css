@@ -167,14 +167,11 @@ h4 {
         top: 350px
     }
 
-    h3 {
+    .table {
         font-size: 35px;
-        height: 40px;
         position: absolute;
         top: 400px;
-        left: 50%;
-        transform: translateX(-50%);
-        
+        text-align: center   
     }
 
     .rect {
