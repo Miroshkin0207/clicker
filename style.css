@@ -179,7 +179,16 @@ h4 {
         top: 500px
     }
 
+    .names {
+        font-size: 20px
+    }
+
+    .scores {
+        font-size: 20px
+    }
+
     .help {
         height: 65px
     }
 }
+
