@@ -169,11 +169,13 @@ h4 {
     }
 
     h3 {
+        font-size: 35px;
+        height: 40px;
         position: absolute;
         top: 400px;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 25px
+        
     }
 
     .rect {
