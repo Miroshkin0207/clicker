@@ -23,7 +23,7 @@ function touchEnd() {
 }
 
 const table = [
-
+                        {name: "Сигма Влдмр", score: 666}
 ]
 table.sort((a, b) => b.score - a.score)
 
@@ -45,5 +45,6 @@ for (let i = 0; i < table.length; i++) {
 
     document.querySelector(".rect").appendChild(line)
 }
+
 
 document.querySelector(".rect").appendChild(help)
