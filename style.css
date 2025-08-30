@@ -69,7 +69,6 @@ h4 {
 
 .line {
     display: flex;
-    font-size: 30px;
     border-bottom: solid 5px black;
     border-left: solid 5px black
 }
@@ -125,17 +124,21 @@ h4 {
     }
 
     h3 {
+        font-size: 35px;
         position: absolute;
         right: 225px;
         top: 15px;
         transform: translateX(+50%);
-        margin: 0;
-        font-size: 35px
+        margin: 0
     }
 
     .rect {
         width: 450px;
         top: 75px
+    }
+
+    .line {
+        font-size: 30px
     }
 
     .help {
@@ -170,13 +173,18 @@ h4 {
     h3 {
         font-size: 35px;
         position: relative;
-        top: 145px;
-        text-align: center   
+        top: 100px;
+        text-align: center;
+        z-index: 5
     }
 
     .rect {
         width: 100%;
         top: 500px
+    }
+
+    .line {
+        font-size: 20px
     }
 
     .help {
