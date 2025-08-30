@@ -94,7 +94,6 @@ h4 {
 .help {
     background-color: rgb(95, 88, 88);
     color: rgb(3, 79, 200);
-    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,7 +141,8 @@ h4 {
     }
 
     .help {
-        height: 75px
+        height: 75px;
+        font-size: 30px
     }
 }
 
@@ -188,6 +188,7 @@ h4 {
     }
 
     .help {
-        height: 65px
+        height: 50px;
+        font-size: 25px
     }
 }
