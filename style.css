@@ -3,6 +3,7 @@
     color: white;
     font-family: Tahoma
 }
+
 #back {
     background-color: black;
     color: rgb(19, 65, 142);
@@ -14,8 +15,8 @@
 
 h1 {
     user-select: none;
-    text-align: center;
-    position: relative
+    position: relative;
+    text-align: center
 }
 
 #mainButton {
@@ -25,7 +26,9 @@ h1 {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto
 }
 
 .score {
@@ -106,15 +109,13 @@ h4 {
     }
 
     h1 {
-        font-size: 40px;
-        bottom: 15px
+        font-size: 40px
     }
 
     #mainButton {
         font-size: 70px;
         width: 450px;
-        height: 450px;
-        left: 400px
+        height: 450px
     }
 
     .score {
@@ -153,15 +154,13 @@ h4 {
 
     h1 {
         font-size: 30px;
-        top: 22px
+        top: 24px
     }
 
     #mainButton {
         font-size: 45px;
         width: 250px;
         height: 250px;
-        margin-right: auto;
-        margin-left: auto;
         top: 7px
     }
 
