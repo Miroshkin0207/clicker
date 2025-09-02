@@ -1,5 +1,5 @@
 ﻿function back() {
-    window.location.href = "https://miroshkin0207.github.io/miroshkin"
+    window.location.href = "https://miroshkinsite.netlify.app"
 }
 
 let button = document.querySelector("#mainButton")
@@ -23,7 +23,7 @@ function touchEnd() {
 }
 
 const table = [
-                        {name: "Сигма Влдмр", score: 666}
+    {name: "Сигма Влдмр", score: 666}
 ]
 table.sort((a, b) => b.score - a.score)
 
@@ -45,6 +45,5 @@ for (let i = 0; i < table.length; i++) {
 
     document.querySelector(".rect").appendChild(line)
 }
-
 
 document.querySelector(".rect").appendChild(help)
