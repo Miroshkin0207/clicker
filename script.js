@@ -49,3 +49,4 @@ for (let i = 0; i < table.length; i++) {
 
 
 document.querySelector(".rect").appendChild(help)
+
